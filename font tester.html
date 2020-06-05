@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Font Testing</title>
+		<style>
+			#title {
+				font-size:75px; 
+				margin-top:0;
+				margin-bottom:0;
+				text-align:Center;
+			}
+			
+			* {
+				transition:0.25s;
+			}
+		</style>
+		<script>
+			function reverseColors(){
+				document.getElementById("bg").style.backgroundColor="#FAFAFA";
+				document.getElementById("title").style.color="black";
+				document.getElementById("tests1").style.color="black";
+				document.getElementById("tests2").style.color="black";
+				document.getElementById("tests3").style.color="black";
+				document.getElementById("desc").style.color="black";
+				document.getElementById("light").style.visibility="hidden";
+				document.getElementById("dark").style.visibility="visible";
+			}
+			
+			function reverseColors2(){
+				document.getElementById("bg").style.backgroundColor="#050505";
+				document.getElementById("title").style.color="white";
+				document.getElementById("tests1").style.color="white";
+				document.getElementById("tests2").style.color="white";
+				document.getElementById("tests3").style.color="white";
+				document.getElementById("desc").style.color="white";
+				document.getElementById("light").style.visibility="visible";
+				document.getElementById("dark").style.visibility="hidden";
+			}
+		</script>
+	</head>
+	<body style="margin:0">
+	<div style="background-color:#050505; height:660px;margin-top:0" id="bg">
+	<a onclick="reverseColors()" style="position:absolute;right:25px;top:25px;color:white;font-family:SF Pro Display Semibold;cursor:pointer" id="light">Reverse Colors</a>
+	<a onclick="reverseColors2()" style="position:absolute;right:25px;top:25px;color:black;font-family:SF Pro Display Semibold;visibility:hidden;cursor:pointer" id="dark">Reverse Colors</a>
+	<br>
+	<br>
+	<h1 style="font-family:SF Pro Display Regular;color:white;" id="title">San Francisco Fonts</h1>
+	<p style="text-align:center;color:white;font-family:SF Pro Display Regular;font-size:20px;				margin-bottom:30px;margin-top:0;" id="desc">This typeface is used prominently in Apple Products.</p>
+		<div style="width:30%;float:left;color:white;" id="tests1">
+			<h1 style="font-family:SF Pro Display Ultralight;text-align:center">Display Ultrathin</h1>
+			<h1 style="font-family:SF Pro Display Thin;text-align:center">Display Thin</h1>
+			<h1 style="font-family:SF Pro Display Regular;text-align:center">Display Regular</h1>
+			<h1 style="font-family:SF Pro Display Semibold;text-align:center">Display Semibold</h1>
+			<h1 style="font-family:SF Pro Display Medium;text-align:center">Display Medium</h1>
+			<h1 style="font-family:SF Pro Display Heavy;text-align:center">Display Heavy</h1>
+			<h1 style="font-family:SF Pro Display Black;text-align:center">Display Black</h1>
+		</div>
+		
+		<div style="position:absolute;width:30%;left:34%;color:white;" id="tests2">
+			<h1 style="font-family:SF Pro Rounded Ultralight;text-align:center">Rounded Ultrathin</h1>
+			<h1 style="font-family:SF Pro Rounded Thin;text-align:center">Rounded Thin</h1>
+			<h1 style="font-family:SF Pro Rounded Regular;text-align:center">Rounded Regular</h1>
+			<h1 style="font-family:SF Pro Rounded Semibold;text-align:center">Rounded Semibold</h1>
+			<h1 style="font-family:SF Pro Rounded Medium;text-align:center">Rounded Medium</h1>
+			<h1 style="font-family:SF Pro Rounded Heavy;text-align:center">Rounded Heavy</h1>
+			<h1 style="font-family:SF Pro Rounded Black;text-align:center">Rounded Black</h1>
+		</div>
+		
+		<div style="width:30%;float:right;color:white;" id="tests3">
+			<h1 style="font-family:SF Pro Text Ultralight;text-align:center">Text Ultrathin</h1>
+			<h1 style="font-family:SF Pro Text Thin;text-align:center">Text Thin</h1>
+			<h1 style="font-family:SF Pro Text Regular;text-align:center">Text Regular</h1>
+			<h1 style="font-family:SF Pro Text Semibold;text-align:center">Text Semibold</h1>
+			<h1 style="font-family:SF Pro Text Medium;text-align:center">Text Medium</h1>
+			<h1 style="font-family:SF Pro Text Heavy;text-align:center">Text Heavy</h1>
+			<h1 style="font-family:SF Pro Text Black;text-align:center">Text Black</h1>
+		</div>
+		</div>
+		
+		<!--<div style="height:660px;margin:0;background-color:#EEEEEE">
+		
+		</div>-->
+	</body>
+</html>
